@@ -9,9 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Login page</title>
     </head>
    <body>
+       <%@include file="Header.jsp" %>
         <form action="${pageContext.request.contextPath}/login" method="post" id="loginForm">
             <div>
                 <div class="panel shadow1">

@@ -46,9 +46,10 @@ public class RegisterController extends HttpServlet {
             boolean rowsInserted = daoA.addAccount(acc);
             if (rowsInserted) {
                 out.println("Registration successful!"
-                        + "<h2><a href=\""+request.getContextPath()+"/jsp/Login.jsp\"> Login</h2>");
+                        + "<h2><a href=\""+request.getContextPath()+"/navbar?go=login\"> Login</h2>");
             } else {
-                out.println("Username is already used");
+                out.println("Username is already used"
+                 + "<h2><a href=\""+request.getContextPath()+"/navbar?go=register\"> Try again</h2>");
             }
         }
     }

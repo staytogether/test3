@@ -34,7 +34,7 @@ public class NavbarController extends HttpServlet {
         try ( PrintWriter out = response.getWriter()) {
             String service = request.getParameter("go");
             if (service.equals("login")) {
-                RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/Login.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/Login.jsp");
                 dispatcher.forward(request, response);
             }
            
@@ -47,7 +47,7 @@ public class NavbarController extends HttpServlet {
                 response.sendRedirect(request.getContextPath() + "/home");
             }
             if (service.equals("register")) {
-                RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/Register.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/Register.jsp");
                 dispatcher.forward(request, response);
             }
         }

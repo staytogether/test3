@@ -43,7 +43,7 @@
                             <div class="slider-item">
                                 <div class="banner-content">
                                     <h2 class="banner-title">Life of the Wild</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+                                    <p>Loem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
                                         ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
                                         urna, a eu.</p>
                                     <div class="btn-wrap">

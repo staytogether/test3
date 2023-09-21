@@ -22,7 +22,7 @@
                         <p><label for="password">Password</label> <input type="password" name="password" id="password" required></p>
                         </p>
                         <div class="error" style="color:red"> ${error} </div>                       
-                        <div class="panel-switch animated fadeIn">
+                        <div>
                             <p><input type="submit" value="Login" name="submit"></p>
                             <p>You don't have any account? <a href="${pageContext.request.contextPath}/navbar?go=register" class="register">Click here</a></p>
                         </div>

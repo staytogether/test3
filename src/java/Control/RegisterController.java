@@ -45,15 +45,15 @@ public class RegisterController extends HttpServlet {
             Account acc = new Account(dob, phone, address, password, username, email);
             boolean rowsInserted = daoA.addAccount(acc);
             if (rowsInserted) {
-                out.println("Registration successful!"
-                        + "<h2><a href=\""+request.getContextPath()+"/navbar?go=login\"> Login</h2>");
+                request.setAttribute("success", "Register successfully!");
+                request.getRequestDispatcher("/Register.jsp").forward(request, response);
             } else {
-                out.println("Username is already used"
-                 + "<h2><a href=\""+request.getContextPath()+"/navbar?go=register\"> Try again</h2>");
+                request.setAttribute("error", "Username had already been registered");
+                request.getRequestDispatcher("/Register.jsp").forward(request, response);
             }
         }
     }
-    
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
